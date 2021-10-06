@@ -1,33 +1,63 @@
-body {
+body, html {
   background-color: white;
-  font-family: poppins, sans-serif;  
+  font-family: poppins, sans-serif;
+  margin: 0;
 }
 
-#section1 {
-    width: 50%;
-    float: left;
-}
 
 #section2 {
-    float: right;
+    float: left;
+    width: 20%;
+    padding-left: 100px;
 }
+
+#introPara {
+    float:left;
+    padding-left: 250px;
+    font-size: 24pt;
+}
+
+#introSent {
+    float: left;
+    padding-left: 250px;
+    padding-top: 50px;
+    font-size: 24pt;
+}
+
+#introSent2 {
+    float: left;
+    padding-left: 250px;
+    padding-top: 50px;
+    font-size: 18pt;
+}
+
 #banner {
-    text-align: center;
+    text-align: left;
     background-color: black;
     color:white;
     width: 100%;
-    position: fixed;
-    left: 0;
-    top: 0;
+}
+
+#banner img {
+    padding-left: 100px;
 }
 
 #footer {
     text-align: center;
     font-size: smaller;
-    position: fixed;
     width: 100%;
     color:white;
-    left: 0;
-    bottom: 0;
     background-color: black;
+    bottom: 0;
+    position: fixed;
+}
+
+#githubLink {
+    float: left;
+    padding-top: 50px;
+    padding-left: 50px;
+}
+
+#linkedINCard {
+    clear: right;
 }
