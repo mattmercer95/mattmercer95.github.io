@@ -1,0 +1,63 @@
+<!-- DO NOT CHANGE ANYTHING IN THIS FILE -->
+
+<!--
+	This document will show all data submitted with a form.
+
+    HOW TO USE
+
+    - In your other document, set the "action" attribute of your <form> tag
+    to this document.
+    - Then when you submit the form in your other document, this page will
+    be displayed and will shown the items submitted.
+
+    Example: In "someOtherDocument.html":
+        <form action="Acknowledgement.html">
+            ...
+            <button type="submit">Submit</button>
+        </form>
+-->
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Acknowledgement of Form Submission</title>
+    <script>
+      window.onload = function () {
+        let params = window.location.search.slice(1).split("&");
+        let html = "<table>";
+        html += "<tr><th>Name</th><th>Value</th></tr>";
+        for (let i = 0; i < params.length; i++) {
+          let pieces = params[i].split("=");
+          let p0 = decodeURIComponent(pieces[0].replace(/\+/g, " "));
+          let p1 = decodeURIComponent(pieces[1].replace(/\+/g, " "));
+          html += "<tr><td>" + p0 + "</td><td>" + p1 + "</td></tr>";
+        }
+        html += "</table>";
+        document.querySelector("#content").innerHTML = html;
+      };
+    </script>
+
+    <style>
+      table,
+      th,
+      td {
+        border: solid thin gray;
+        border-collapse: collapse;
+      }
+
+      th,
+      td {
+        padding: 10px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>Form Submitted</h1>
+
+    <h2>Parameters</h2>
+
+    <div id="content"></div>
+  </body>
+</html>
+<!-- DO NOT CHANGE ANYTHING IN THIS FILE -->

@@ -1,0 +1,486 @@
+/* Poppins font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;400&display=swap');
+
+/* General Styles */
+
+body {
+    background-color: #6CDFFB;
+    font-family: Poppins, sans-serif;
+    margin: 0;
+}
+
+
+/* Header Styles */
+
+#header {
+    width: 100%;
+    background-color: #876AFB;
+    color: white;
+    overflow: auto;
+}
+#header img {
+    width: 200px;
+    padding-left: 100px;
+    float: left;
+}
+#headerButtons {
+    float: right;
+    padding-right: 50px;
+    padding-top: 10px;
+    font-size: 1.2em;
+}
+#headerButtons a {
+    text-decoration: none;
+    color: white;
+}
+#headerButtons a:hover {
+    text-decoration: underline;
+}
+#headerButtons div{
+    padding: 8px;
+}
+#headerText {
+    font-size: 4em;
+    padding-left: 70px;
+    padding-top: 50px;
+    padding-bottom: 20px;
+    float: left;
+    font-family: 'AnaktoriaRegular';
+}
+
+
+/* Navigation Styles */
+
+#navBar {
+    list-style-type: none;
+    list-style-position: inside;
+    font-size: 1.2em;
+    text-decoration: none;
+}
+#navBar a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+#navBar > li:hover {
+    background-color: #D9FB51;
+    border-radius: 10px;
+    border: thin dotted #FB876A;
+    text-decoration: underline;
+}
+#navBar > li:hover ul {
+    display: block;
+    background-color: #D9FB51;
+    border-radius: 10px;
+}
+#navBar ul {
+    display: none;
+    list-style-type: none;
+    list-style-position: inside;
+    padding-bottom: 20px;
+}
+.navButton {
+    width: 19%;
+    float: left;
+    text-align: center;
+    padding-top: 10px;
+}
+.navButton li {
+    text-align: left;
+    padding-top: 10px;
+}
+.navButton li > img{
+    padding-left: 5px;
+    width: 20px;
+}
+.navButton li > a {
+    text-decoration: none;
+}
+#navBarBackground {
+    overflow: auto;
+    background-color: #DEFB6A;
+    border-top: solid thick #FB876A;
+    border-bottom: solid thick #FB876A;
+    padding-bottom: 20px;
+}
+
+/* Breadcrumb Navigation */
+
+ul.breadcrumb {
+    padding: 10px 16px;
+    list-style: none;
+}
+ul.breadcrumb li {
+    display: inline;
+    font-size: 18px;
+}
+ul.breadcrumb li+li:before {
+    padding: 8px;
+    color: black;
+    content: "/\00a0";
+}
+ul.breadcrumb li a {
+    color: #876AFB;
+    text-decoration: none;
+}
+ul.breadcrumb li a:hover {
+    color: #5d34ff;
+    text-decoration: underline;
+}
+
+/* General Content Styles */
+
+#content {
+    clear: left;
+}
+
+
+/* Home Page Content Styles */
+
+#continentCardContainer a{
+    text-decoration: none;
+}
+#homePageContent {
+    width: 50%;
+    margin: auto;
+}
+#homePageContent h2 {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 2.2em;
+    border-bottom: solid thick #FB876A;
+    font-family: 'AnaktoriaRegular';
+}
+#homePageContent p {
+    padding-bottom: 10px;
+    font-size: 1.2em;
+    padding-bottom: 50px;
+}
+#continentCardContainer {
+    width: 50%;
+    margin: auto;
+}
+.continentCards {
+    width: 40%;
+    float: left;
+    margin-left: 50px;
+    margin-bottom: 40px;
+    border: solid thick #FB876A;
+    background-color: #D9FB51;
+    border-radius: 20px;
+    color: black;
+}
+
+.continentCards:hover {
+    border-color: #876AFB;
+    box-shadow: 5px 5px #876AFB;
+    background-color: #BBE805;
+}
+
+#asiaCard {
+    margin-left: 30%;
+    margin-right: 50%;
+}
+.continentCards h3 {
+    text-align: center;
+}
+.continentCards img {
+    display: block;
+    width: 70%;
+    margin-left: auto;
+    margin-right:auto;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+.continentCards a {
+    display: block;
+}
+
+
+/* Continent Content Styles */
+
+#countryCardContainer {
+    width: 50%;
+    margin: auto;
+}
+#countryCards {
+    width: 100%;
+    float: left;
+    margin-top: 30px;
+    border: solid thick #FB876A;
+    background-color: #D9FB51;
+    border-radius: 20px;
+}
+#countryCards:hover {
+    border-color: #876AFB;
+    box-shadow: 5px 5px #876AFB;
+    background-color: #BBE805;
+}
+
+#namePop {
+    width: 40%;
+    float:left;
+}
+#countryCards img {
+    width: 100px;
+    display: block;
+    float: left;
+    margin-top: 25px;
+    margin-left: 25px;
+}
+#countryCards p {
+    clear:left;
+    text-align: justify;
+    margin-right: 15px;
+    font-size: 1.1em;
+} 
+#namePop h3 {
+    font-size: 1.5em;
+}
+#namePop h4 {
+    font-size: 1.3em;
+}
+#countryCards h3, h4, p {
+    padding-left: 15px;
+}
+#contentDescription {
+    width: 50%;
+    margin: auto;
+    margin-top: 10px;
+    overflow: auto;
+    border-radius: 20px;
+    font-size: 1.2em;
+    text-align: justify;
+}
+
+#contentDescription h2 {
+    padding-bottom: 10px;
+    font-size: 2.2em;
+    margin-left: 15px;
+    margin-right: 15px;
+    border-bottom: solid thick #FB876A;
+    font-family: 'AnaktoriaRegular';
+}
+#continentMap img{
+    width: 200px;
+    float: left;
+    margin-right: 30px;
+    margin-bottom: 10px;
+}
+#continentMap {
+    width: 20%;
+}
+#continentDescription p:first-child {
+    width: 50%;
+    float: left;
+}
+
+/* Country Page Content */
+#countryPageContent {
+    width: 50%;
+    margin: auto;
+}
+#flagImage {
+    float: left;
+}
+#flagImage img {
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px;
+    border: thick solid #FB876A;
+    border-radius: 10px;
+}
+#countryPageContent p {
+    clear: left;
+}
+#anthemTitle {
+    font-weight: bold;
+}
+#countryIntro h2 {
+    padding-bottom: 10px;
+    font-size: 2.2em;
+    margin-left: 15px;
+    margin-right: 15px;
+    padding-top: 25px;
+    border-bottom: solid thick #FB876A;
+    font-family: 'AnaktoriaRegular';
+}
+#countryIntroPic img{
+    width: 100%;
+    float: left;
+    margin-right: 30px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    border: thick solid #FB876A;
+}
+#countryIntroPic {
+    width: 40%;
+}
+#countryDescription {
+    width: 50%;
+    float: left;
+    font-size: 1.2em;
+    text-align: justify;
+}
+#flagAnthem {
+    clear:left;
+    padding-top: 50px;
+}
+#flagImage {
+    width: 30%;
+}
+#flagImage img{
+    width: 80%;
+}
+#emblem img {
+    width: 50%;
+    border: thick solid #FB876A;
+    border-radius: 100px;
+    padding: 10px;
+    background-color: white;
+}
+#emblem {
+    width: 30%;
+    float: left;
+    margin-left: 60px;
+}
+#anthem {
+    float: left;
+    width: 30%;
+}
+
+#googleMap {
+    clear: left;
+    padding-top: 50px;
+}
+#googleMap iframe {
+    width: 100%;
+    height: 450px;
+    border: thick solid #FB876A;
+    border-radius: 10px; 
+}
+
+#countryStats {
+    border: solid thick #FB876A;
+    border-radius: 10px;
+    padding: 15px;
+    margin-top: 50px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 1.2em;
+    text-align: left;
+    background-color: #D9FB51;
+}
+
+#moreInfoButton {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 75px;
+    padding: 20px;
+    text-align: center;
+    background-color: #D9FB51;
+    border-radius: 20px;
+    border: thick solid #FB876A;
+    font-weight: bold;
+    font-size: 1.3em;
+}
+#moreInfoButton:hover {
+    text-decoration: underline;
+    border-color: #876AFB;
+    box-shadow: 5px 5px #876AFB;
+    background-color: #BBE805;
+}
+#countryPageContent a {
+    text-decoration: none;
+}
+
+/*Form*/
+
+.form {
+    width: 50%;
+    background-color: #D9FB51;;
+    padding: 20px;
+    font-size: 25px;
+    margin-left: 25%;
+    margin-top: 5%;
+    border: solid thick #FB876A;
+    border-radius: 20px;
+}
+#formpic {
+    float: left;
+    margin-top: 35px;
+}
+
+input{
+    font-size: 25px;
+    width: 100%;
+}
+
+textarea {
+    width: 100%;
+    height: 200px;
+    font-size: 25px;
+}
+
+button{
+    width: 50%;
+    font-size: 25px;
+    background-color: #FB876A;
+    color: white;
+}
+
+button:hover {
+    border-color: #876AFB;
+    box-shadow: 5px 5px #876AFB;
+}
+
+h5 {
+    font-size: 45px;
+    margin-left: 35%;
+}
+
+/*Contact Us Form*/
+
+#formtxt {
+    text-align: center;
+    border-bottom: solid 3px #FB876A;
+     
+}
+
+.contactform {
+    width: 50%;
+    background-color: #D9FB51;;
+    padding: 20px;
+    font-size: 25px;
+    margin-left: 25%;
+    margin-top: 5%;
+    border: solid thick #FB876A;
+    border-radius: 20px;
+}
+.formHeader {
+    font-family: 'AnaktoriaRegular';
+}
+.radioRating {
+    font-size: 15px;
+    width: 20%;
+    float: left;
+}
+
+/* Footer Styles */
+
+#footer {
+    width: 100%;
+    clear: left;
+    color: white;
+    padding-top: 100px;
+}
+#footer > div{
+    width: 33.33%;
+    float: left;
+    text-align: center;
+    background-color: #876AFB;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
