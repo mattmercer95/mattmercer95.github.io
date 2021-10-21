@@ -14,14 +14,14 @@ body, html {
 #introPara {
     float:left;
     padding-left: 250px;
-    font-size: 24pt;
+    font-size: 3em;
 }
 
 #introSent {
     float: left;
     padding-left: 250px;
     padding-top: 50px;
-    font-size: 24pt;
+    font-size: 1.5em;
 }
 
 #introSent2 {
