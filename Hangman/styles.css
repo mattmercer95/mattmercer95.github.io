@@ -1,0 +1,184 @@
+/* 
+    Responsive Web Development: Hangman Assignment 
+    by: Matt Mercer
+    date: 2021-11-23
+*/
+
+body {
+    background-color: lightcyan;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.header {
+    text-align: center;
+}
+
+.hangmanPic {
+    width: 30%;
+    float: left;
+    text-align: center;
+    margin-left: 12%;
+}
+#hangmanImageID {
+    width: 100%;
+}
+.hangmanLetters {
+    float: left;
+    width: 50%;
+}
+
+.answerBlock {
+    margin-top: 100px;
+    text-align: center;
+}
+.answerLetter {
+    border-bottom: solid thick black;
+    font-size: 4em;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.guessBlock {
+    text-align: center;
+    margin-top: 70px;
+}
+.guessLetter {
+    border: solid thin black;
+    border-radius: 10px;
+    font-size: 3.5em;
+    box-sizing: border-box;
+    margin: 10px;
+    float: left;
+    width: 5%;
+}
+.guessLetter:hover {
+    background-color: grey;
+    border-color: white;
+    color:white;
+}
+
+.footer {
+    clear: left;
+    text-align: center;
+    margin-top: 50px;
+}
+#NewGameButton {
+    font-size: 3em;
+    border-radius: 10px;
+    font-family: 'Courier New', Courier, monospace;
+    margin-top: 70px;
+}
+#NewGameButton:hover {
+    background-color: grey;
+}
+
+.guessCounter {
+    clear: left;
+    font-size: 2.75em;
+}
+
+@media only screen and (max-width: 1440px){
+    .answerLetter {
+        font-size: 3em;
+    }
+    .guessLetter {
+        font-size: 2.5em;
+        padding-right: 5px;
+        padding-left: 5px;
+    }
+    #NewGameButton {
+        font-size: 2em;
+    }
+    .guessCounter {
+        font-size: 1.75em;
+    }
+}
+
+@media only screen and (max-width: 1024px){
+    .answerLetter {
+        font-size: 2.25em;
+    }
+    .guessLetter {
+        font-size: 2.15em;
+        padding-right: 5px;
+        padding-left: 2px;
+    }
+    #NewGameButton {
+        font-size: 2em;
+    }
+    .guessCounter {
+        font-size: 1.75em;
+    }
+}
+
+@media only screen and (max-width: 768px){
+    .answerLetter {
+        font-size: 1.5em;
+        box-sizing: border-box;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+    .answerBlock {
+        margin-top: 50px;
+    }
+    .guessLetter {
+        font-size: 1.25em;
+        padding-left: 3px;
+    }
+    #NewGameButton {
+        font-size: 1em;
+    }
+    .guessCounter {
+        font-size: 0.875em;
+    }
+    .hangmanLetters {
+        clear: left;
+        width: 75%;
+        margin-left: 12%;
+        margin-right: 12%;
+    }
+    .hangmanPic {
+        width: 75%;
+        margin-left: 12%;
+        margin-right: 12%;
+    }
+    #hangmanImageID {
+        width: 50%;
+    }
+}
+
+@media only screen and (max-width: 425px){
+    .answerLetter {
+        font-size: 1em;
+        box-sizing: border-box;
+        margin-left: 2px;
+        margin-right: 2px;
+    }
+    .answerBlock {
+        margin-top: 35px;
+    }
+    .guessLetter {
+        font-size: 0.75em;
+        padding-left: 3px;
+    }
+    #NewGameButton {
+        font-size: 1em;
+    }
+    .guessCounter {
+        font-size: 0.875em;
+    }
+    .hangmanLetters {
+        clear: left;
+        width: 75%;
+        margin-left: 12%;
+        margin-right: 12%;
+    }
+    .hangmanPic {
+        width: 75%;
+        margin-left: 12%;
+        margin-right: 12%;
+    }
+    #hangmanImageID {
+        width: 50%;
+    }
+}

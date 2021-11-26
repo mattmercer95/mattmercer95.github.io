@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- 
+             Responsive Web Development: Hangman Assignment 
+             by: Matt Mercer
+             date: 2021-11-23
+        -->
+        <title>Hangman Assignment</title>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+        <script src="Hangman.js"></script>
+    </head>
+    <body onload="NewGame()">
+
+        <!-- Header -->
+        <div class="header">
+            <h1>Hangman Assignment</h1>
+            <h3>by: Matt Mercer</h3>
+            <h3>Theme: Programming Languages</h3>
+        </div>
+
+        <!-- Content -->
+        <div class="content">
+
+            <!-- Hangman Board -->
+            <div class="hangmanPic">
+                <img src="Images/hangmanStart.png" id="hangmanImageID" alt="Hangman Board">
+                <!-- Guess Counter -->
+                <div class="guessCounter">
+                    <label>Guesses Remaining:</label>
+                    <label id="guessNumber">6</label>
+                </div>
+            </div>
+
+            <!-- Hangman Letters -->
+            <div class="hangmanLetters">
+                <!-- Where the answer goes -->
+                <div class="answerBlock" id="answerBlockID">
+                </div>
+                <!-- Where the user guesses letters -->
+                <div class="guessBlock">
+                    <label class="guessLetter" id="A" onclick="checkLetter('A'); ">A</label>
+                    <label class="guessLetter" id="B" onclick="checkLetter('B'); ">B</label>
+                    <label class="guessLetter" id="C" onclick="checkLetter('C'); ">C</label>
+                    <label class="guessLetter" id="D" onclick="checkLetter('D'); ">D</label>
+                    <label class="guessLetter" id="E" onclick="checkLetter('E'); ">E</label>
+                    <label class="guessLetter" id="F" onclick="checkLetter('F'); ">F</label>
+                    <label class="guessLetter" id="G" onclick="checkLetter('G'); ">G</label>
+                    <label class="guessLetter" id="H" onclick="checkLetter('H'); ">H</label>
+                    <label class="guessLetter" id="I" onclick="checkLetter('I'); ">I</label>
+                    <label class="guessLetter" id="J" onclick="checkLetter('J'); ">J</label>
+                    <label class="guessLetter" id="K" onclick="checkLetter('K'); ">K</label>
+                    <label class="guessLetter" id="L" onclick="checkLetter('L'); ">L</label>
+                    <label class="guessLetter" id="M" onclick="checkLetter('M'); ">M</label>
+                    <label class="guessLetter" id="N" onclick="checkLetter('N'); ">N</label>
+                    <label class="guessLetter" id="O" onclick="checkLetter('O'); ">O</label>
+                    <label class="guessLetter" id="P" onclick="checkLetter('P'); ">P</label>
+                    <label class="guessLetter" id="Q" onclick="checkLetter('Q'); ">Q</label>
+                    <label class="guessLetter" id="R" onclick="checkLetter('R'); ">R</label>
+                    <label class="guessLetter" id="S" onclick="checkLetter('S'); ">S</label>
+                    <label class="guessLetter" id="T" onclick="checkLetter('T'); ">T</label>
+                    <label class="guessLetter" id="U" onclick="checkLetter('U'); ">U</label>
+                    <label class="guessLetter" id="V" onclick="checkLetter('V'); ">V</label>
+                    <label class="guessLetter" id="W" onclick="checkLetter('W'); ">W</label>
+                    <label class="guessLetter" id="X" onclick="checkLetter('X'); ">X</label>
+                    <label class="guessLetter" id="Y" onclick="checkLetter('Y'); ">Y</label>
+                    <label class="guessLetter" id="Z" onclick="checkLetter('Z'); ">Z</label>
+                </div>
+                <!-- New Game Button -->
+                <div class="footer">
+                    <button id="NewGameButton" onclick='NewGame()'>New Game</button>
+                </div>
+            </div>
+
+        </div>
+    </body>
+</html>
